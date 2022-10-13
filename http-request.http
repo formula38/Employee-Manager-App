@@ -1,0 +1,31 @@
+###
+POST http://localhost:8080/employee/add
+[
+ {
+   "email": "lsherar1@gmpg.org",
+   "imageUrl": "http://dummyimage.com/166x100.png/cc0000/ffffff",
+   "jobTitle": "Geologist I",
+   "name": "Lesley Sherar",
+   "phone": "799-392-9666"
+ },
+ {
+   "email": "lbernardinelli2@vkontakte.ru",
+   "imageUrl": "http://dummyimage.com/247x100.png/ff4444/ffffff",
+   "jobTitle": "Paralegal",
+   "name": "Lind Bernardinelli",
+   "phone": "538-887-1323"
+ },
+ {
+   "email": "sattkins3@skype.com",
+   "imageUrl": "http://dummyimage.com/179x100.png/cc0000/ffffff",
+   "jobTitle": "Teacher",
+   "name": "Shalom Attkins",
+   "phone": "228-766-4257"
+ }
+]
+
+<> 2022-10-13T111148.415.json
+<> 2022-10-13T111134.415.json
+<> 2022-10-13T111050.415.json
+
+###
