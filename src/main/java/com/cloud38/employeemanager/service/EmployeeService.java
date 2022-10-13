@@ -1,5 +1,6 @@
 package com.cloud38.employeemanager.service;
 
+import com.cloud38.employeemanager.exception.UserNotFoundException;
 import com.cloud38.employeemanager.model.Employee;
 import com.cloud38.employeemanager.repo.EmployeeRepo;
 import org.springframework.beans.factory.annotation.Autowired;
