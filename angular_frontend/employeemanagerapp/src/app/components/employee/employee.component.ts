@@ -11,7 +11,7 @@ import {HttpErrorResponse} from "@angular/common/http";
 export class EmployeeComponent implements OnInit {
   constructor(private employeeService: EmployeeService) { }
 
-  public employees: Employee[] | undefined;
+  public employees: Employee[] | undefined
 
   ngOnInit(): void {
     this.getEmployees();
