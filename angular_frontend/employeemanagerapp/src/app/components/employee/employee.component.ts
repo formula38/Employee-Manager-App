@@ -9,9 +9,10 @@ import {HttpErrorResponse} from "@angular/common/http";
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit {
-  constructor(private employeeService: EmployeeService) { }
+  public employees: Employee[] | undefined;
 
-  public employees: Employee[] | undefined
+  constructor(private employeeService: EmployeeService) {}
+
 
   ngOnInit(): void {
     this.getEmployees();

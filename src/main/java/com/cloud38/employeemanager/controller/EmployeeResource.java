@@ -11,6 +11,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/employee")
+@CrossOrigin(origins = { "http://localhost:4200", "http://localhost:3000"},
+        allowCredentials = "true", allowedHeaders = "true", exposedHeaders = "true")
 public class EmployeeResource {
     private final EmployeeService employeeService;
 
