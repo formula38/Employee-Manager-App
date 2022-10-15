@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {EmployeeService} from "../../services/employeeservices/employee.service";
-import {Employee} from "../../employee";
+import {Employee} from "./employee";
 import {HttpErrorResponse} from "@angular/common/http";
 
 @Component({
@@ -29,8 +29,8 @@ export class EmployeeComponent implements OnInit {
     );
   }
 
-  public onOpenModal(employee: Employee, mode: string): void {
-    const container = document.getElementById('main-container')
+  public onOpenModal(employee: Employee | null, mode: string): void {
+    const container = document.getElementById('main-container')!;
     const button = document.createElement('button');
 
     button.type = 'button';
