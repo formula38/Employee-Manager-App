@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {EmployeeService} from "../../services/employeeservices/employee.service";
 import {Employee} from "./employee";
 import {HttpErrorResponse} from "@angular/common/http";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-employee',
@@ -27,6 +28,19 @@ export class EmployeeComponent implements OnInit {
         alert(error.message);
       }
     );
+  }
+
+  public onAddEmployee(addFrom: NgForm): void {
+    document.getElementById('add-employee-form')!.click();
+    this.employeeService.addEmployee(addFrom.value).subscribe(
+      (response: Employee) => {
+        console.log(response);
+        this.getEmployees();
+      },
+      (error: HttpErrorResponse) => {
+        alert(error.message);
+      }
+    )
   }
 
   public onOpenModal(employee: Employee | null, mode: string): void {
